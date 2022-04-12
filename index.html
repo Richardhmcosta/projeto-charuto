@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="diogeneses">
+        <img src="./diogeneses.png" />
+    </div>
+
+    <h1>Diogeneses Puente</h1>
+
+    <div id="inputContainer">
+        <input id="hours-input" type="text" placeholder="insira seu nome" />
+        <input id="idade" type="number" placeholder="insira sua idade" />
+    </div>
+    <button id="butao" onclick="verificarIdade()">Verificar</button>
+
+
+
+    <h5 id="mensagens"></h5>
+
+    <script>
+        function verificarIdade() {
+
+            let idade = document.getElementById("idade").value;
+            let mensagens = document.getElementById("mensagens")
+
+            if (idade >= 2004) {
+                mensagens.innerText = "voce nao pode comprar charuto"
+
+            } else {
+                mensagens.innerText = "Voce pode comprar um charutao"
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
